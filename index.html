@@ -58,25 +58,6 @@
                 <li class="toctree-l3"><a href="#overview">Overview</a></li>
                 
             
-                <li class="toctree-l3"><a href="#support-for-real-time-packet-ingestion-java-api-ingestion-and-support-for-csv-and-log-files">Support for real-time packet ingestion, Java API ingestion, and support for csv and log files</a></li>
-                
-                    <li><a class="toctree-l4" href="#adding-cloudera-services">Adding Cloudera services</a></li>
-                
-                    <li><a class="toctree-l4" href="#adding-the-flume-service">Adding the Flume service</a></li>
-                
-                    <li><a class="toctree-l4" href="#adding-the-accumulo-service">Adding the Accumulo service</a></li>
-                
-                    <li><a class="toctree-l4" href="#adding-the-hive-service">Adding the Hive service</a></li>
-                
-                    <li><a class="toctree-l4" href="#adding-the-impala-service">Adding the Impala service</a></li>
-                
-                    <li><a class="toctree-l4" href="#adding-the-argyledb-service">Adding the ArgyleDB service</a></li>
-                
-                    <li><a class="toctree-l4" href="#adding-the-prestodb-service">Adding the PrestoDB service</a></li>
-                
-                    <li><a class="toctree-l4" href="#adding-the-ibis-service">Adding the IBIS service</a></li>
-                
-            
             </ul>
         
     </li>
@@ -143,89 +124,15 @@
             <div class="section">
               
                 <h1 id="overview">Overview</h1>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-ArgyleDB delivers data-intensive applications that can detect trends and anomalies at petabyte scale on live, machine-generated, streaming data combined with business and enrichment data. Key advantages of ArgyleDB include:</p>
+<p>ArgyleDB delivers data-intensive applications that can detect trends and anomalies at petabyte scale on live, machine-generated, streaming data combined with business and enrichment data. Key advantages of ArgyleDB include:</p>
 <ul>
 <li>The raw ingestion performance of a row store and querying performance of a column store </li>
 <li>The simplicity and speed of interactive SQL queries</li>
 <li>Latest machine learning algorithms against massive datasets</li>
 <li>Integrated in a unique, high-performance way with automatic schema-on-read</li>
 <li>Built on standard Hadoop distributions</li>
-<li>
-<h1 id="support-for-real-time-packet-ingestion-java-api-ingestion-and-support-for-csv-and-log-files">Support for real-time packet ingestion, Java API ingestion, and support for csv and log files</h1>
-</li>
+<li>Support for real-time packet ingestion, Java API ingestion, and support for csv and log files</li>
 </ul>
-<h3 id="adding-cloudera-services">Adding Cloudera services</h3>
-<p>Select on the arrow next to cluster name and select Add a Service per picture below
-<img alt="" src="./images/Home_add_service_1.png" /></p>
-<p>From list of services pick the service you want to add
-<img alt="" src="./images/All_add_service_wizard_1.png" /></p>
-<h3 id="adding-the-flume-service">Adding the Flume service</h3>
-<p>Follow Adding Cloudera services above and Select continue to accept defaults below
-<img alt="" src="./images/Flume_add_service_wizard_1.png" /></p>
-<p>Select on Flume agent selection field and select hosts you want to have the agent on from the list of available hosts and Select continue and finish
-<img alt="" src="./images/Flume_add_service_wizard_2.png" /></p>
-<h3 id="adding-the-accumulo-service">Adding the Accumulo service</h3>
-<p>Follow Adding Cloudera services above and Select continue to accept defaults below
-<img alt="" src="./images/Accumulo_add_service_wizard_1.png" /></p>
-<p>Select on Accumulo master, Tablet Server, Garbage Collector, Monitor, Tracer, Gateway selection fields and select hosts you want to have Accumulo on from the list of available hosts and Select continue
-<img alt="" src="./images/Accumulo_add_service_wizard_2.png" /></p>
-<p>Make sure the values below match what you have on screen and set Root Password field to Argyle standard and Select continue than finish
-<img alt="" src="./images/Accumulo_add_service_wizard_3.png" /></p>
-<h3 id="adding-the-hive-service">Adding the Hive service</h3>
-<p>Follow Adding Cloudera services above and Select continue to accept defaults below
-<img alt="" src="./images/Hive_add_service_wizard_1.png" /></p>
-<p>Select on Gateway, Hive Metastore Server, WebHcat Server, Hiveserver2 selection fields and select hosts you want to have Hive on from the list of available hosts and Select continue.
-<img alt="" src="./images/Hive_add_service_wizard_2.png" /></p>
-<p>Select Use Embedded database and Select test connection then Select continue
-<img alt="" src="./images/Hive_add_service_wizard_3.png" /></p>
-<p>Leave defaults below as is and Select finish
-<img alt="" src="./images/Hive_add_service_wizard_4.png" /></p>
-<h3 id="adding-the-impala-service">Adding the Impala service</h3>
-<p>Follow Adding Cloudera services above and Select continue to accept defaults below
-<img alt="" src="./images/Impala_add_service_wizard_1.png" /></p>
-<p>Select on Impala Catalog Server, Impala Satatestore, WImpala Daemon selection fields and select hosts you want to have Hive on from the list of available hosts and Select continue.
-<img alt="" src="./images/Impala_add_service_wizard_2.png" /></p>
-<p>Leave defaults as is and Select continue than finish
-<img alt="" src="./images/Impala_add_service_wizard_3.png" /></p>
-<h3 id="adding-the-argyledb-service">Adding the ArgyleDB service</h3>
-<p>Follow Adding Cloudera services above and Select continue to accept defaults below
-<img alt="" src="./images/ArgyleDB_add_service_wizard_1.png" /></p>
-<p>Select on ArgyleDB Server, Redis Server selection fields and select hosts you want to have ArgyleDB on from the list of available hosts and Select continue.
-<img alt="" src="./images/ArgyleDB_add_service_wizard_2.png" /></p>
-<p>Set Accumulo user password and PrestoDB discovery URI as below
-<img alt="" src="./images/ArgyleDB_add_service_wizard_3-1.png" /></p>
-<p>Add Redis server host if localhost set to local otherwise use FQDN name. Add Tableau rest api user. Add Tableau user password for rest apu user. Add api admin user
-<img alt="" src="./images/ArgyleDB_add_service_wizard_3-2.png" /></p>
-<p>Add ipa admin user password. Add host ipa server. Add ipa cert path
-<img alt="" src="./images/ArgyleDB_add_service_wizard_3-3.png" /></p>
-<h3 id="adding-the-prestodb-service">Adding the PrestoDB service</h3>
-<p>Follow Adding Cloudera services above and Select continue to accept defaults below
-<img alt="" src="./images/PrestoDB_add_service_wizard_1.png" /></p>
-<p>Add Accumulo instance name. Set accumulo password per Argyle records
-<img alt="" src="./images/PrestoDB_add_service_wizard_2-1.png" /></p>
-<p>Leave defaults as is and Select continue then finish
-<img alt="" src="./images/PrestoDB_add_service_wizard_2-2.png" /></p>
-<h3 id="adding-the-ibis-service">Adding the IBIS service</h3>
-<p>Follow adding Cloudera services above and Select continue to accept defaults below
-<img alt="" src="./images/IBIS_add_service_wizard_1.png" /></p>
-<p>ignore the error during install
-<img alt="" src="./images/IBIS_add_service_wizard_2.png" /></p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>e90d7a90c464436a01a50b5b9da9901fa3ff17dd</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
               
             </div>
           </div>
@@ -271,5 +178,5 @@ ArgyleDB delivers data-intensive applications that can detect trends and anomali
 
 <!--
 MkDocs version : 0.14.0
-Build Date UTC : 2015-11-09 21:06:41.571539
+Build Date UTC : 2015-11-09 21:15:00.914359
 -->
