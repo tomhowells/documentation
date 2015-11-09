@@ -57,13 +57,6 @@
 <li>
           
             <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../installation/">Installation</a>
-        
-    </li>
-<li>
-          
-            <li>
     <li class="toctree-l1 current">
         <a class="current" href="./">Cloudera Installation</a>
         
@@ -75,20 +68,23 @@
                 
                     <li><a class="toctree-l4" href="#adding-the-flume-service">Adding the Flume service</a></li>
                 
-                    <li><a class="toctree-l4" href="#adding-the-accumulo-service">Adding the Accumulo service</a></li>
-                
                     <li><a class="toctree-l4" href="#adding-the-hive-service">Adding the Hive service</a></li>
                 
-                    <li><a class="toctree-l4" href="#adding-the-impala-service">Adding the Impala service</a></li>
+                    <li><a class="toctree-l4" href="#impala-service">Impala service</a></li>
                 
-                    <li><a class="toctree-l4" href="#adding-the-argyledb-service">Adding the ArgyleDB service</a></li>
-                
-                    <li><a class="toctree-l4" href="#adding-the-prestodb-service">Adding the PrestoDB service</a></li>
+                    <li><a class="toctree-l4" href="#argyledb-service">ArgyleDB service</a></li>
                 
                     <li><a class="toctree-l4" href="#adding-the-ibis-service">Adding the IBIS service</a></li>
                 
             
             </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../network-ingest/">Network Ingest</a>
         
     </li>
 <li>
@@ -150,11 +146,6 @@
 <img alt="" src="../images/Flume_add_service_wizard_1.png" /></p>
 <p>Select on Flume agent selection field and select hosts you want to have the agent on from the list of available hosts and select continue and finish
 <img alt="" src="../images/Flume_add_service_wizard_2.png" /></p>
-<h2 id="adding-the-accumulo-service">Adding the Accumulo service</h2>
-<p>Follow Adding Cloudera services above and select continue to accept defaults below
-<img alt="" src="../images/Accumulo_add_service_wizard_1.png" /></p>
-<p>Select on Accumulo master, Tablet Server, Garbage Collector, Monitor, Tracer, Gateway selection fields and select hosts you want to have Accumulo on from the list of available hosts and select continue
-<img alt="" src="../images/Accumulo_add_service_wizard_2.png" /></p>
 <p>Make sure the values below match what you have on screen and set Root Password field to Argyle standard and select continue than finish
 <img alt="" src="../images/Accumulo_add_service_wizard_3.png" /></p>
 <h2 id="adding-the-hive-service">Adding the Hive service</h2>
@@ -166,14 +157,14 @@
 <img alt="" src="../images/Hive_add_service_wizard_3.png" /></p>
 <p>Leave defaults below as is and select finish
 <img alt="" src="../images/Hive_add_service_wizard_4.png" /></p>
-<h2 id="adding-the-impala-service">Adding the Impala service</h2>
+<h2 id="impala-service">Impala service</h2>
 <p>Follow Adding Cloudera services above and select continue to accept defaults below
 <img alt="" src="../images/Impala_add_service_wizard_1.png" /></p>
 <p>Select on Impala Catalog Server, Impala Satatestore, Impala Daemon selection fields and select hosts you want to have Hive on from the list of available hosts and select continue.
 <img alt="" src="../images/Impala_add_service_wizard_2.png" /></p>
 <p>Leave defaults as is and select continue than finish
 <img alt="" src="../images/Impala_add_service_wizard_3.png" /></p>
-<h2 id="adding-the-argyledb-service">Adding the ArgyleDB service</h2>
+<h2 id="argyledb-service">ArgyleDB service</h2>
 <p>Follow Adding Cloudera services above and select continue to accept defaults below
 <img alt="" src="../images/ArgyleDB_add_service_wizard_1.png" /></p>
 <p>Select on ArgyleDB Server, Redis Server selection fields and select hosts you want to have ArgyleDB on from the list of available hosts and select continue.
@@ -184,13 +175,6 @@
 <img alt="" src="../images/ArgyleDB_add_service_wizard_3-2.png" /></p>
 <p>Add IPA admin user password. Add host IPA server. Add ipa cert path
 <img alt="" src="../images/ArgyleDB_add_service_wizard_3-3.png" /></p>
-<h2 id="adding-the-prestodb-service">Adding the PrestoDB service</h2>
-<p>Follow Adding Cloudera services above and select continue to accept defaults below
-<img alt="" src="../images/PrestoDB_add_service_wizard_1.png" /></p>
-<p>Add Accumulo instance name. Set Accumulo password per Argyle records
-<img alt="" src="../images/PrestoDB_add_service_wizard_2-1.png" /></p>
-<p>Leave defaults as is and select continue then finish
-<img alt="" src="../images/PrestoDB_add_service_wizard_2-2.png" /></p>
 <h2 id="adding-the-ibis-service">Adding the IBIS service</h2>
 <p>Follow adding Cloudera services above and select continue to accept defaults below
 <img alt="" src="../images/IBIS_add_service_wizard_1.png" /></p>
@@ -203,10 +187,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../requirements/" class="btn btn-neutral float-right" title="System Requirements"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../network-ingest/" class="btn btn-neutral float-right" title="Network Ingest"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../installation/" class="btn btn-neutral" title="Installation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -232,10 +216,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../installation/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../requirements/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../network-ingest/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
