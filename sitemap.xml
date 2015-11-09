@@ -3,7 +3,7 @@
 
     
     <url>
-     <loc>http://argyledata.github.io//</loc>
+     <loc>None/</loc>
      <lastmod>2015-11-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -11,7 +11,7 @@
 
     
     <url>
-     <loc>http://argyledata.github.io//documentation/</loc>
+     <loc>None/installation/</loc>
      <lastmod>2015-11-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -19,7 +19,7 @@
 
     
     <url>
-     <loc>http://argyledata.github.io//Requirements/</loc>
+     <loc>None/cloudera-install/</loc>
      <lastmod>2015-11-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -27,7 +27,15 @@
 
     
     <url>
-     <loc>http://argyledata.github.io//Releases/</loc>
+     <loc>None/requirements/</loc>
+     <lastmod>2015-11-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>None/releases/</loc>
      <lastmod>2015-11-09</lastmod>
      <changefreq>daily</changefreq>
     </url>

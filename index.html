@@ -55,25 +55,6 @@
         
             <ul>
             
-                <li class="toctree-l3"><a href="#cloudera-54-service-configuration">Cloudera 5.4 Service Configuration</a></li>
-                
-                    <li><a class="toctree-l4" href="#adding-cloudera-services">Adding Cloudera services</a></li>
-                
-                    <li><a class="toctree-l4" href="#adding-the-flume-service">Adding the Flume service</a></li>
-                
-                    <li><a class="toctree-l4" href="#adding-the-accumulo-service">Adding the Accumulo service</a></li>
-                
-                    <li><a class="toctree-l4" href="#adding-the-hive-service">Adding the Hive service</a></li>
-                
-                    <li><a class="toctree-l4" href="#adding-the-impala-service">Adding the Impala service</a></li>
-                
-                    <li><a class="toctree-l4" href="#adding-the-argyledb-service">Adding the ArgyleDB service</a></li>
-                
-                    <li><a class="toctree-l4" href="#adding-the-prestodb-service">Adding the PrestoDB service</a></li>
-                
-                    <li><a class="toctree-l4" href="#adding-the-ibis-service">Adding the IBIS service</a></li>
-                
-            
             </ul>
         
     </li>
@@ -81,21 +62,28 @@
           
             <li>
     <li class="toctree-l1 ">
-        <a class="" href="documentation/">Index</a>
+        <a class="" href="installation/">Installation</a>
         
     </li>
 <li>
           
             <li>
     <li class="toctree-l1 ">
-        <a class="" href="Requirements/">System_Requirements</a>
+        <a class="" href="cloudera-install/">Cloudera Installation</a>
         
     </li>
 <li>
           
             <li>
     <li class="toctree-l1 ">
-        <a class="" href="Releases/">Release_Notes</a>
+        <a class="" href="requirements/">System Requirements</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="releases/">Release Notes</a>
         
     </li>
 <li>
@@ -132,63 +120,7 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="cloudera-54-service-configuration">Cloudera 5.4 Service Configuration</h1>
-<h2 id="adding-cloudera-services">Adding Cloudera services</h2>
-<p>Select on the arrow next to cluster name and select Add a Service per picture below
-<img alt="" src="./images/Home_add_service_1.png" /></p>
-<p>From list of services pick the service you want to add
-<img alt="" src="./images/All_add_service_wizard_1.png" /></p>
-<h2 id="adding-the-flume-service">Adding the Flume service</h2>
-<p>Follow Adding Cloudera services above and Select continue to accept defaults below
-<img alt="" src="./images/Flume_add_service_wizard_1.png" /></p>
-<p>Select on Flume agent selection field and select hosts you want to have the agent on from the list of available hosts and Select continue and finish
-<img alt="" src="./images/Flume_add_service_wizard_2.png" /></p>
-<h2 id="adding-the-accumulo-service">Adding the Accumulo service</h2>
-<p>Follow Adding Cloudera services above and Select continue to accept defaults below
-<img alt="" src="./images/Accumulo_add_service_wizard_1.png" /></p>
-<p>Select on Accumulo master, Tablet Server, Garbage Collector, Monitor, Tracer, Gateway selection fields and select hosts you want to have Accumulo on from the list of available hosts and Select continue
-<img alt="" src="./images/Accumulo_add_service_wizard_2.png" /></p>
-<p>Make sure the values below match what you have on screen and set Root Password field to Argyle standard and Select continue than finish
-<img alt="" src="./images/Accumulo_add_service_wizard_3.png" /></p>
-<h2 id="adding-the-hive-service">Adding the Hive service</h2>
-<p>Follow Adding Cloudera services above and Select continue to accept defaults below
-<img alt="" src="./images/Hive_add_service_wizard_1.png" /></p>
-<p>Select on Gateway, Hive Metastore Server, WebHcat Server, Hiveserver2 selection fields and select hosts you want to have Hive on from the list of available hosts and Select continue.
-<img alt="" src="./images/Hive_add_service_wizard_2.png" /></p>
-<p>Select Use Embedded database and Select test connection then Select continue
-<img alt="" src="./images/Hive_add_service_wizard_3.png" /></p>
-<p>Leave defaults below as is and Select finish
-<img alt="" src="./images/Hive_add_service_wizard_4.png" /></p>
-<h2 id="adding-the-impala-service">Adding the Impala service</h2>
-<p>Follow Adding Cloudera services above and Select continue to accept defaults below
-<img alt="" src="./images/Impala_add_service_wizard_1.png" /></p>
-<p>Select on Impala Catalog Server, Impala Satatestore, WImpala Daemon selection fields and select hosts you want to have Hive on from the list of available hosts and Select continue.
-<img alt="" src="./images/Impala_add_service_wizard_2.png" /></p>
-<p>Leave defaults as is and Select continue than finish
-<img alt="" src="./images/Impala_add_service_wizard_3.png" /></p>
-<h2 id="adding-the-argyledb-service">Adding the ArgyleDB service</h2>
-<p>Follow Adding Cloudera services above and Select continue to accept defaults below
-<img alt="" src="./images/ArgyleDB_add_service_wizard_1.png" /></p>
-<p>Select on ArgyleDB Server, Redis Server selection fields and select hosts you want to have ArgyleDB on from the list of available hosts and Select continue.
-<img alt="" src="./images/ArgyleDB_add_service_wizard_2.png" /></p>
-<p>Set Accumulo user password and PrestoDB discovery URI as below
-<img alt="" src="./images/ArgyleDB_add_service_wizard_3-1.png" /></p>
-<p>Add Redis server host if localhost set to local otherwise use FQDN name. Add Tableau rest api user. Add Tableau user password for rest apu user. Add api admin user
-<img alt="" src="./images/ArgyleDB_add_service_wizard_3-2.png" /></p>
-<p>Add ipa admin user password. Add host ipa server. Add ipa cert path
-<img alt="" src="./images/ArgyleDB_add_service_wizard_3-3.png" /></p>
-<h2 id="adding-the-prestodb-service">Adding the PrestoDB service</h2>
-<p>Follow Adding Cloudera services above and Select continue to accept defaults below
-<img alt="" src="./images/PrestoDB_add_service_wizard_1.png" /></p>
-<p>Add Accumulo instance name. Set accumulo password per Argyle records
-<img alt="" src="./images/PrestoDB_add_service_wizard_2-1.png" /></p>
-<p>Leave defaults as is and Select continue then finish
-<img alt="" src="./images/PrestoDB_add_service_wizard_2-2.png" /></p>
-<h2 id="adding-the-ibis-service">Adding the IBIS service</h2>
-<p>Follow adding Cloudera services above and Select continue to accept defaults below
-<img alt="" src="./images/IBIS_add_service_wizard_1.png" /></p>
-<p>ignore the error during install
-<img alt="" src="./images/IBIS_add_service_wizard_2.png" /></p>
+                
               
             </div>
           </div>
@@ -196,7 +128,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="documentation/" class="btn btn-neutral float-right" title="Index"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="installation/" class="btn btn-neutral float-right" title="Installation"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
     </div>
@@ -224,7 +156,7 @@
       
       
       
-        <span style="margin-left: 15px"><a href="documentation/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="installation/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
@@ -234,5 +166,5 @@
 
 <!--
 MkDocs version : 0.14.0
-Build Date UTC : 2015-11-09 19:52:43.222790
+Build Date UTC : 2015-11-09 20:01:40.762034
 -->

@@ -2,76 +2,126 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Cloudera 5.4 Service Configuration\n\n\nAdding Cloudera services\n\n\nSelect on the arrow next to cluster name and select Add a Service per picture below\n\n\n\nFrom list of services pick the service you want to add\n\n\n\nAdding the Flume service\n\n\nFollow Adding Cloudera services above and Select continue to accept defaults below\n\n\n\nSelect on Flume agent selection field and select hosts you want to have the agent on from the list of available hosts and Select continue and finish\n\n\n\nAdding the Accumulo service\n\n\nFollow Adding Cloudera services above and Select continue to accept defaults below\n\n\n\nSelect on Accumulo master, Tablet Server, Garbage Collector, Monitor, Tracer, Gateway selection fields and select hosts you want to have Accumulo on from the list of available hosts and Select continue\n\n\n\nMake sure the values below match what you have on screen and set Root Password field to Argyle standard and Select continue than finish\n\n\n\nAdding the Hive service\n\n\nFollow Adding Cloudera services above and Select continue to accept defaults below\n\n\n\nSelect on Gateway, Hive Metastore Server, WebHcat Server, Hiveserver2 selection fields and select hosts you want to have Hive on from the list of available hosts and Select continue.\n\n\n\nSelect Use Embedded database and Select test connection then Select continue\n\n\n\nLeave defaults below as is and Select finish\n\n\n\nAdding the Impala service\n\n\nFollow Adding Cloudera services above and Select continue to accept defaults below\n\n\n\nSelect on Impala Catalog Server, Impala Satatestore, WImpala Daemon selection fields and select hosts you want to have Hive on from the list of available hosts and Select continue.\n\n\n\nLeave defaults as is and Select continue than finish\n\n\n\nAdding the ArgyleDB service\n\n\nFollow Adding Cloudera services above and Select continue to accept defaults below\n\n\n\nSelect on ArgyleDB Server, Redis Server selection fields and select hosts you want to have ArgyleDB on from the list of available hosts and Select continue.\n\n\n\nSet Accumulo user password and PrestoDB discovery URI as below\n\n\n\nAdd Redis server host if localhost set to local otherwise use FQDN name. Add Tableau rest api user. Add Tableau user password for rest apu user. Add api admin user\n\n\n\nAdd ipa admin user password. Add host ipa server. Add ipa cert path\n\n\n\nAdding the PrestoDB service\n\n\nFollow Adding Cloudera services above and Select continue to accept defaults below\n\n\n\nAdd Accumulo instance name. Set accumulo password per Argyle records\n\n\n\nLeave defaults as is and Select continue then finish\n\n\n\nAdding the IBIS service\n\n\nFollow adding Cloudera services above and Select continue to accept defaults below\n\n\n\nignore the error during install", 
+            "text": "", 
             "title": "Home"
         }, 
         {
-            "location": "/#cloudera-54-service-configuration", 
+            "location": "/installation/", 
+            "text": "Cloudera 5.4 Service Configuration\n\n\nAdding Cloudera services\n\n\nSelect on the arrow next to cluster name and select Add a Service per picture below\n\n\n\nFrom list of services pick the service you want to add\n\n\n\nAdding the Flume service\n\n\nFollow Adding Cloudera services above and select continue to accept defaults below\n\n\n\nSelect on Flume agent selection field and select hosts you want to have the agent on from the list of available hosts and select continue and finish\n\n\n\nAdding the Accumulo service\n\n\nFollow Adding Cloudera services above and select continue to accept defaults below\n\n\n\nSelect on Accumulo master, Tablet Server, Garbage Collector, Monitor, Tracer, Gateway selection fields and select hosts you want to have Accumulo on from the list of available hosts and select continue\n\n\n\nMake sure the values below match what you have on screen and set Root Password field to Argyle standard and select continue than finish\n\n\n\nAdding the Hive service\n\n\nFollow Adding Cloudera services above and select continue to accept defaults below\n\n\n\nSelect on Gateway, Hive Metastore Server, WebHcat Server, Hiveserver2 selection fields and select hosts you want to have Hive on from the list of available hosts and select continue.\n\n\n\nSelect Use Embedded database and select test connection then select continue\n\n\n\nLeave defaults below as is and select finish\n\n\n\nAdding the Impala service\n\n\nFollow Adding Cloudera services above and select continue to accept defaults below\n\n\n\nSelect on Impala Catalog Server, Impala Satatestore, Impala Daemon selection fields and select hosts you want to have Hive on from the list of available hosts and select continue.\n\n\n\nLeave defaults as is and select continue than finish\n\n\n\nAdding the ArgyleDB service\n\n\nFollow Adding Cloudera services above and select continue to accept defaults below\n\n\n\nSelect on ArgyleDB Server, Redis Server selection fields and select hosts you want to have ArgyleDB on from the list of available hosts and select continue.\n\n\n\nSet Accumulo user password and PrestoDB discovery URI as below\n\n\n\nAdd Redis server host if localhost set to local otherwise use FQDN name. Add Tableau REST API user. Add Tableau user password for rest apu user. Add api admin user\n\n\n\nAdd IPA admin user password. Add host IPA server. Add ipa cert path\n\n\n\nAdding the PrestoDB service\n\n\nFollow Adding Cloudera services above and select continue to accept defaults below\n\n\n\nAdd Accumulo instance name. Set Accumulo password per Argyle records\n\n\n\nLeave defaults as is and select continue then finish\n\n\n\nAdding the IBIS service\n\n\nFollow adding Cloudera services above and select continue to accept defaults below\n\n\n\nIgnore the error during install", 
+            "title": "Installation"
+        }, 
+        {
+            "location": "/installation/#cloudera-54-service-configuration", 
             "text": "", 
             "title": "Cloudera 5.4 Service Configuration"
         }, 
         {
-            "location": "/#adding-cloudera-services", 
+            "location": "/installation/#adding-cloudera-services", 
             "text": "Select on the arrow next to cluster name and select Add a Service per picture below  From list of services pick the service you want to add", 
             "title": "Adding Cloudera services"
         }, 
         {
-            "location": "/#adding-the-flume-service", 
-            "text": "Follow Adding Cloudera services above and Select continue to accept defaults below  Select on Flume agent selection field and select hosts you want to have the agent on from the list of available hosts and Select continue and finish", 
+            "location": "/installation/#adding-the-flume-service", 
+            "text": "Follow Adding Cloudera services above and select continue to accept defaults below  Select on Flume agent selection field and select hosts you want to have the agent on from the list of available hosts and select continue and finish", 
             "title": "Adding the Flume service"
         }, 
         {
-            "location": "/#adding-the-accumulo-service", 
-            "text": "Follow Adding Cloudera services above and Select continue to accept defaults below  Select on Accumulo master, Tablet Server, Garbage Collector, Monitor, Tracer, Gateway selection fields and select hosts you want to have Accumulo on from the list of available hosts and Select continue  Make sure the values below match what you have on screen and set Root Password field to Argyle standard and Select continue than finish", 
+            "location": "/installation/#adding-the-accumulo-service", 
+            "text": "Follow Adding Cloudera services above and select continue to accept defaults below  Select on Accumulo master, Tablet Server, Garbage Collector, Monitor, Tracer, Gateway selection fields and select hosts you want to have Accumulo on from the list of available hosts and select continue  Make sure the values below match what you have on screen and set Root Password field to Argyle standard and select continue than finish", 
             "title": "Adding the Accumulo service"
         }, 
         {
-            "location": "/#adding-the-hive-service", 
-            "text": "Follow Adding Cloudera services above and Select continue to accept defaults below  Select on Gateway, Hive Metastore Server, WebHcat Server, Hiveserver2 selection fields and select hosts you want to have Hive on from the list of available hosts and Select continue.  Select Use Embedded database and Select test connection then Select continue  Leave defaults below as is and Select finish", 
+            "location": "/installation/#adding-the-hive-service", 
+            "text": "Follow Adding Cloudera services above and select continue to accept defaults below  Select on Gateway, Hive Metastore Server, WebHcat Server, Hiveserver2 selection fields and select hosts you want to have Hive on from the list of available hosts and select continue.  Select Use Embedded database and select test connection then select continue  Leave defaults below as is and select finish", 
             "title": "Adding the Hive service"
         }, 
         {
-            "location": "/#adding-the-impala-service", 
-            "text": "Follow Adding Cloudera services above and Select continue to accept defaults below  Select on Impala Catalog Server, Impala Satatestore, WImpala Daemon selection fields and select hosts you want to have Hive on from the list of available hosts and Select continue.  Leave defaults as is and Select continue than finish", 
+            "location": "/installation/#adding-the-impala-service", 
+            "text": "Follow Adding Cloudera services above and select continue to accept defaults below  Select on Impala Catalog Server, Impala Satatestore, Impala Daemon selection fields and select hosts you want to have Hive on from the list of available hosts and select continue.  Leave defaults as is and select continue than finish", 
             "title": "Adding the Impala service"
         }, 
         {
-            "location": "/#adding-the-argyledb-service", 
-            "text": "Follow Adding Cloudera services above and Select continue to accept defaults below  Select on ArgyleDB Server, Redis Server selection fields and select hosts you want to have ArgyleDB on from the list of available hosts and Select continue.  Set Accumulo user password and PrestoDB discovery URI as below  Add Redis server host if localhost set to local otherwise use FQDN name. Add Tableau rest api user. Add Tableau user password for rest apu user. Add api admin user  Add ipa admin user password. Add host ipa server. Add ipa cert path", 
+            "location": "/installation/#adding-the-argyledb-service", 
+            "text": "Follow Adding Cloudera services above and select continue to accept defaults below  Select on ArgyleDB Server, Redis Server selection fields and select hosts you want to have ArgyleDB on from the list of available hosts and select continue.  Set Accumulo user password and PrestoDB discovery URI as below  Add Redis server host if localhost set to local otherwise use FQDN name. Add Tableau REST API user. Add Tableau user password for rest apu user. Add api admin user  Add IPA admin user password. Add host IPA server. Add ipa cert path", 
             "title": "Adding the ArgyleDB service"
         }, 
         {
-            "location": "/#adding-the-prestodb-service", 
-            "text": "Follow Adding Cloudera services above and Select continue to accept defaults below  Add Accumulo instance name. Set accumulo password per Argyle records  Leave defaults as is and Select continue then finish", 
+            "location": "/installation/#adding-the-prestodb-service", 
+            "text": "Follow Adding Cloudera services above and select continue to accept defaults below  Add Accumulo instance name. Set Accumulo password per Argyle records  Leave defaults as is and select continue then finish", 
             "title": "Adding the PrestoDB service"
         }, 
         {
-            "location": "/#adding-the-ibis-service", 
-            "text": "Follow adding Cloudera services above and Select continue to accept defaults below  ignore the error during install", 
+            "location": "/installation/#adding-the-ibis-service", 
+            "text": "Follow adding Cloudera services above and select continue to accept defaults below  Ignore the error during install", 
             "title": "Adding the IBIS service"
         }, 
         {
-            "location": "/documentation/", 
+            "location": "/cloudera-install/", 
+            "text": "Cloudera 5.4 Service Configuration\n\n\nAdding Cloudera services\n\n\nSelect on the arrow next to cluster name and select Add a Service per picture below\n\n\n\nFrom list of services pick the service you want to add\n\n\n\nAdding the Flume service\n\n\nFollow Adding Cloudera services above and select continue to accept defaults below\n\n\n\nSelect on Flume agent selection field and select hosts you want to have the agent on from the list of available hosts and select continue and finish\n\n\n\nAdding the Accumulo service\n\n\nFollow Adding Cloudera services above and select continue to accept defaults below\n\n\n\nSelect on Accumulo master, Tablet Server, Garbage Collector, Monitor, Tracer, Gateway selection fields and select hosts you want to have Accumulo on from the list of available hosts and select continue\n\n\n\nMake sure the values below match what you have on screen and set Root Password field to Argyle standard and select continue than finish\n\n\n\nAdding the Hive service\n\n\nFollow Adding Cloudera services above and select continue to accept defaults below\n\n\n\nSelect on Gateway, Hive Metastore Server, WebHcat Server, Hiveserver2 selection fields and select hosts you want to have Hive on from the list of available hosts and select continue.\n\n\n\nSelect Use Embedded database and select test connection then select continue\n\n\n\nLeave defaults below as is and select finish\n\n\n\nAdding the Impala service\n\n\nFollow Adding Cloudera services above and select continue to accept defaults below\n\n\n\nSelect on Impala Catalog Server, Impala Satatestore, Impala Daemon selection fields and select hosts you want to have Hive on from the list of available hosts and select continue.\n\n\n\nLeave defaults as is and select continue than finish\n\n\n\nAdding the ArgyleDB service\n\n\nFollow Adding Cloudera services above and select continue to accept defaults below\n\n\n\nSelect on ArgyleDB Server, Redis Server selection fields and select hosts you want to have ArgyleDB on from the list of available hosts and select continue.\n\n\n\nSet Accumulo user password and PrestoDB discovery URI as below\n\n\n\nAdd Redis server host if localhost set to local otherwise use FQDN name. Add Tableau REST API user. Add Tableau user password for rest apu user. Add api admin user\n\n\n\nAdd IPA admin user password. Add host IPA server. Add ipa cert path\n\n\n\nAdding the PrestoDB service\n\n\nFollow Adding Cloudera services above and select continue to accept defaults below\n\n\n\nAdd Accumulo instance name. Set Accumulo password per Argyle records\n\n\n\nLeave defaults as is and select continue then finish\n\n\n\nAdding the IBIS service\n\n\nFollow adding Cloudera services above and select continue to accept defaults below\n\n\n\nIgnore the error during install", 
+            "title": "Cloudera Installation"
+        }, 
+        {
+            "location": "/cloudera-install/#cloudera-54-service-configuration", 
             "text": "", 
-            "title": "Index"
+            "title": "Cloudera 5.4 Service Configuration"
         }, 
         {
-            "location": "/Requirements/", 
+            "location": "/cloudera-install/#adding-cloudera-services", 
+            "text": "Select on the arrow next to cluster name and select Add a Service per picture below  From list of services pick the service you want to add", 
+            "title": "Adding Cloudera services"
+        }, 
+        {
+            "location": "/cloudera-install/#adding-the-flume-service", 
+            "text": "Follow Adding Cloudera services above and select continue to accept defaults below  Select on Flume agent selection field and select hosts you want to have the agent on from the list of available hosts and select continue and finish", 
+            "title": "Adding the Flume service"
+        }, 
+        {
+            "location": "/cloudera-install/#adding-the-accumulo-service", 
+            "text": "Follow Adding Cloudera services above and select continue to accept defaults below  Select on Accumulo master, Tablet Server, Garbage Collector, Monitor, Tracer, Gateway selection fields and select hosts you want to have Accumulo on from the list of available hosts and select continue  Make sure the values below match what you have on screen and set Root Password field to Argyle standard and select continue than finish", 
+            "title": "Adding the Accumulo service"
+        }, 
+        {
+            "location": "/cloudera-install/#adding-the-hive-service", 
+            "text": "Follow Adding Cloudera services above and select continue to accept defaults below  Select on Gateway, Hive Metastore Server, WebHcat Server, Hiveserver2 selection fields and select hosts you want to have Hive on from the list of available hosts and select continue.  Select Use Embedded database and select test connection then select continue  Leave defaults below as is and select finish", 
+            "title": "Adding the Hive service"
+        }, 
+        {
+            "location": "/cloudera-install/#adding-the-impala-service", 
+            "text": "Follow Adding Cloudera services above and select continue to accept defaults below  Select on Impala Catalog Server, Impala Satatestore, Impala Daemon selection fields and select hosts you want to have Hive on from the list of available hosts and select continue.  Leave defaults as is and select continue than finish", 
+            "title": "Adding the Impala service"
+        }, 
+        {
+            "location": "/cloudera-install/#adding-the-argyledb-service", 
+            "text": "Follow Adding Cloudera services above and select continue to accept defaults below  Select on ArgyleDB Server, Redis Server selection fields and select hosts you want to have ArgyleDB on from the list of available hosts and select continue.  Set Accumulo user password and PrestoDB discovery URI as below  Add Redis server host if localhost set to local otherwise use FQDN name. Add Tableau REST API user. Add Tableau user password for rest apu user. Add api admin user  Add IPA admin user password. Add host IPA server. Add ipa cert path", 
+            "title": "Adding the ArgyleDB service"
+        }, 
+        {
+            "location": "/cloudera-install/#adding-the-prestodb-service", 
+            "text": "Follow Adding Cloudera services above and select continue to accept defaults below  Add Accumulo instance name. Set Accumulo password per Argyle records  Leave defaults as is and select continue then finish", 
+            "title": "Adding the PrestoDB service"
+        }, 
+        {
+            "location": "/cloudera-install/#adding-the-ibis-service", 
+            "text": "Follow adding Cloudera services above and select continue to accept defaults below  Ignore the error during install", 
+            "title": "Adding the IBIS service"
+        }, 
+        {
+            "location": "/requirements/", 
             "text": "Hardware\n\n\nCPU\n - Dual Intel Quad/Hex Cores\n\n\nMemory\n - 128 GB or more recommended, ideally 256 GB or more\n\n\nStorage\n - DataNodes with 8 or more 2TD disks each\n\n\nNetwork IF\n Bonded Gigabit Ethernet or 10Gigabit Ethernet\n\n\nOperating Systems\n\n\nRed Hat-compatible systems\n\n Red Hat Enterprise Linux 5.7 and CentOS 5.7, 64-bit\n\n Red Hat Enterprise Linux 6.2 and 6.4, and CentOS 6.2 and 6.4, 64-bit\n\n Oracle Enterprise Linux 5.6 with Unbreakable Enterprise Kernel, 64-bit\nSLES systems\n\n SUSE Linux Enterprise Server 11, 64-bit. Service Pack 1 or later is requireAlso, the SUSE Linux Enterprise Software Development Kit 11 SP1 is required on cluster hosts running the Cloudera Manager Agents (not required on the Cloudera Manager Server host); you can download the SDK here.d. \nDebian systems\n\n Debian 6.0 (Squeeze), 64-bit\nUbuntu systems\n\n Ubuntu 10.04 (Lucid Lynx), 64-bit\n* Ubuntu 12.04 (Precise Pangolin), 64-bit\n\n\nHadoop Versions\n\n\n\n\nFlume 1.5.2\n\n\nGanglia 3.5.0\n\n\nHDFS 2.6.0\n\n\nNagios 3.5.0\n\n\nYARN + MapReduce2  2.6.0\n\n\nZooKeeper 3.4.6\n\n\nCDH 5.1.1+\n\n\n\n\nOther\n\n\n\n\nJava 1.7+ \n\n\nBoost C++ Libraries\n\n\nPython / Anaconda", 
-            "title": "System_Requirements"
+            "title": "System Requirements"
         }, 
         {
-            "location": "/Releases/", 
+            "location": "/releases/", 
             "text": "Release Notes\n\n\n15.4.1\n\n\nThis is a minor release that only includes Tableau the following workbook enhancements.  \n\n\nThe following features improvements are part of the upgrade:\n\n\n\n\n\n\nView MIS data directly in the Tableau report\n\n\n\n\n\n\nSearch by customer\u2019s own account number (in addition to IMIE/IMSI) \nThis is done through the Customer Data Search tab of the workbook.", 
-            "title": "Release_Notes"
+            "title": "Release Notes"
         }, 
         {
-            "location": "/Releases/#release-notes", 
+            "location": "/releases/#release-notes", 
             "text": "", 
             "title": "Release Notes"
         }, 
         {
-            "location": "/Releases/#1541", 
+            "location": "/releases/#1541", 
             "text": "This is a minor release that only includes Tableau the following workbook enhancements.    The following features improvements are part of the upgrade:    View MIS data directly in the Tableau report    Search by customer\u2019s own account number (in addition to IMIE/IMSI) \nThis is done through the Customer Data Search tab of the workbook.", 
             "title": "15.4.1"
         }
