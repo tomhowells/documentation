@@ -7,6 +7,8 @@ Select on the arrow next to cluster name and select Add a Service per picture be
 From list of services pick the service you want to add
 ![](images/All_add_service_wizard_1.png)
 
+*****
+
 ### Adding the Flume service
 Follow Adding Cloudera services above and select continue to accept defaults below
 ![](images/Flume_add_service_wizard_1.png)
@@ -27,6 +29,8 @@ Select Use Embedded database and select test connection then select continue
 Leave defaults below as is and select finish
 ![](images/Hive_add_service_wizard_4.png)
 
+*****
+
 ### Adding the Impala service
 Follow Adding Cloudera services above and select continue to accept defaults below
 ![](images/Impala_add_service_wizard_1.png)
@@ -36,6 +40,8 @@ Select on Impala Catalog Server, Impala Satatestore, Impala Daemon selection fie
 
 Leave defaults as is and select continue than finish
 ![](images/Impala_add_service_wizard_3.png)
+
+*****
 
 ### Adding the ArgyleDB service
 Follow Adding Cloudera services above and select continue to accept defaults below
@@ -49,6 +55,8 @@ Add Redis server host if localhost set to local otherwise use FQDN name. Add Tab
 
 Add IPA admin user password. Add host IPA server. Add ipa cert path
 ![](images/ArgyleDB_add_service_wizard_3-3.png)
+
+*****
 
 ### Adding the IBIS service
 Follow adding Cloudera services above and select continue to accept defaults below
