@@ -1,4 +1,12 @@
 site_name: ArgyleData
-pages:
-- Index: index.md
 theme: readthedocs
+site_url: /
+site_description: Documentation for Argyle Data
+include_404: true
+include_search: true
+
+pages:
+- Home: index.md
+- Index: documentation.md
+- System_Requirements: Requirements.md
+- Release_Notes: Releases.md
