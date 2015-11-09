@@ -14,16 +14,6 @@ Follow Adding Cloudera services above and select continue to accept defaults bel
 Select on Flume agent selection field and select hosts you want to have the agent on from the list of available hosts and select continue and finish
 ![](images/Flume_add_service_wizard_2.png)
 
-### Adding the Accumulo service
-Follow Adding Cloudera services above and select continue to accept defaults below
-![](images/Accumulo_add_service_wizard_1.png)
-
-Select on Accumulo master, Tablet Server, Garbage Collector, Monitor, Tracer, Gateway selection fields and select hosts you want to have Accumulo on from the list of available hosts and select continue
-![](images/Accumulo_add_service_wizard_2.png)
-
-Make sure the values below match what you have on screen and set Root Password field to Argyle standard and select continue than finish
-![](images/Accumulo_add_service_wizard_3.png)
-
 ### Adding the Hive service
 Follow Adding Cloudera services above and select continue to accept defaults below
 ![](images/Hive_add_service_wizard_1.png)
@@ -54,24 +44,11 @@ Follow Adding Cloudera services above and select continue to accept defaults bel
 Select on ArgyleDB Server, Redis Server selection fields and select hosts you want to have ArgyleDB on from the list of available hosts and select continue.
 ![](images/ArgyleDB_add_service_wizard_2.png)
 
-Set Accumulo user password and PrestoDB discovery URI as below
-![](images/ArgyleDB_add_service_wizard_3-1.png)
-
 Add Redis server host if localhost set to local otherwise use FQDN name. Add Tableau REST API user. Add Tableau user password for rest apu user. Add api admin user
 ![](images/ArgyleDB_add_service_wizard_3-2.png)
 
 Add IPA admin user password. Add host IPA server. Add ipa cert path
 ![](images/ArgyleDB_add_service_wizard_3-3.png)
-
-### Adding the PrestoDB service
-Follow Adding Cloudera services above and select continue to accept defaults below
-![](images/PrestoDB_add_service_wizard_1.png)
-
-Add Accumulo instance name. Set Accumulo password per Argyle records
-![](images/PrestoDB_add_service_wizard_2-1.png)
-
-Leave defaults as is and select continue then finish
-![](images/PrestoDB_add_service_wizard_2-2.png)
 
 ### Adding the IBIS service
 Follow adding Cloudera services above and select continue to accept defaults below
