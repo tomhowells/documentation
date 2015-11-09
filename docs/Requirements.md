@@ -30,9 +30,10 @@ Ubuntu systems
 * YARN + MapReduce2  2.6.0
 * ZooKeeper 3.4.6
 * CDH 5.1.1+
+* Impala 2.0.1+ 
 
 ### Other
 
 * Java 1.7+ 
-* Boost C++ Libraries
 * Python / Anaconda
+* IBIS
