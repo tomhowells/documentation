@@ -1,0 +1,10 @@
+site_name: ArgyleData
+theme: readthedocs
+site_description: Documentation for Argyle Data
+
+pages:
+- Home: index.md
+- Cloudera Installation: cloudera-install.md
+- Network Ingest: network-ingest.md
+- System Requirements: requirements.md
+- Release Notes: releases.md
