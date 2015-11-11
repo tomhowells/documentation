@@ -64,3 +64,8 @@ Follow adding Cloudera services above and select continue to accept defaults bel
 
 Ignore the error during install
 ![](images/IBIS_add_service_wizard_2.png)
+
+*****
+
+### Adding the Anaconda environment
+To install Anacondo go to [https://www.continuum.io/downloads] and pick linux as your platform and python 2.7. Download the installer and run the following command to install the software: `bash Anaconda2-2.4.0-Linux-x86_64.sh`
