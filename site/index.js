@@ -15,6 +15,7 @@ _createWorkerApp();
 
 function _createWorkerApp(){
     var app = express();
+    var port = process.env.PORT || 8080;
     // session support
     //app.use(cookieParser('720657C2-5890-4F3F-838C-F056C64AE304'));
     //app.use(session({
@@ -69,7 +70,7 @@ function _createWorkerApp(){
         typeof message === 'string' ? errorMessage.message = message : errorMessage.message = message.message;
         res.json(errorMessage);
     });
-    app.listen(process.env.port);
-    console.info('Processor: %d started, and listened on %d.', process.pid, process.env.port);
+    app.listen(port);
+    console.info('Processor: %d started, and listened on %d.', process.pid, port);
 
 }
