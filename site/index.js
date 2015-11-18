@@ -4,9 +4,11 @@
 
 var express = require('express'),
     session = require('express-session'),
-    RedisStore = require('connect-redis')(session);
+    RedisStore = require('connect-redis')(session),
+    path = require('path'),
+    domain = require('domain');
 
-var clientRoot = __dirname + '/site';
+var clientRoot = __dirname;
 
 
 _createWorkerApp();
@@ -32,7 +34,7 @@ function _createWorkerApp(){
         var d = domain.create();
         d.on('error', function (err) {
             // handle unexpected exceptions
-            logger.error(err.stack || err.message || err);
+            //logger.error(err.stack || err.message || err);
             res.statusCode = 500;
             try{
                 res.json({
@@ -45,7 +47,7 @@ function _createWorkerApp(){
         });
         d.add(req);
         d.add(res);
-        logger.debug('PID:%d, handler %s', process.pid, req.url);
+        //logger.debug('PID:%d, handler %s', process.pid, req.url);
         d.run(next);
     });
     app.get('*', function(request, response){
@@ -67,7 +69,7 @@ function _createWorkerApp(){
         typeof message === 'string' ? errorMessage.message = message : errorMessage.message = message.message;
         res.json(errorMessage);
     });
-    app.listen(process.env.port);
+    app.listen(8080);
     console.info('Processor: %d started, and listened on %d.', process.pid, process.env.port);
 
 }
