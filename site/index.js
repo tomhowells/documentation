@@ -69,7 +69,7 @@ function _createWorkerApp(){
         typeof message === 'string' ? errorMessage.message = message : errorMessage.message = message.message;
         res.json(errorMessage);
     });
-    app.listen(8080);
+    app.listen(process.env.port);
     console.info('Processor: %d started, and listened on %d.', process.pid, process.env.port);
 
 }
