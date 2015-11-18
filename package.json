@@ -9,7 +9,7 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "connect-redis": "^2.1.0",
     "express": "3.x",
     "express-session": "^1.0.1"
