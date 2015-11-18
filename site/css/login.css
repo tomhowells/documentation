@@ -1,0 +1,151 @@
+body {
+    color: #3e4a5b;
+    padding: 0px;
+    background-color: #202834;
+    background-image: url(/img/well_bg.jpg);
+    background-repeat: repeat;
+}
+
+@media (max-width: 767px) {
+    .login-pane {
+        position: relative;
+        width: 320px;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .login-pane .banner {
+        width: 240px;
+        margin: auto;
+    }
+
+    .login-pane .banner img {
+        width: 240px;
+        height: 159px;
+    }
+}
+
+@media (min-width: 768px){
+    .login-pane {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -230px;
+        margin-top: -200px;
+        width: 460px;
+    }
+
+    .login-pane .banner {
+        width: 300px;
+        margin: auto;
+    }
+
+    .login-pane .banner img {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+.login-pane .alert {
+    text-align: center;
+}
+
+.login-pane .banner-row {
+    margin-bottom: 40px;
+}
+
+.login-pane .panel-body {
+    padding: 30px;
+}
+
+.input-container,
+.passwd-container{
+    position: relative;
+}
+
+.input-container input,
+.passwd-container input {
+    border: 0px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.has-error .form-control,
+.has-error .form-control:focus,
+.login-pane .form-control:focus{
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.passwd-container input {
+    padding: 0 25px 0 10px;
+}
+
+.sign-in-icon {
+    position: absolute;
+    right: 15px;
+    top: 0px;
+    padding: 0px;
+    font-size: 25px;
+}
+
+.keep-sign-in-label {
+    margin-left: 5px;
+    color: #a2a2a3
+}
+
+#password_change_modal .form-control.invalid {
+    border-color: #A94442;
+}
+
+
+.onoffswitch {
+    position: relative; width: 44px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: px solid #999999; border-radius: 12px;
+    margin-bottom: 0px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+    -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 17px; padding: 0; line-height: 17px;
+    font-size: 10px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 5px;
+    background-color: #34A7C1; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 5px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 18px;
+    background: #FFFFFF;
+    border: 1px solid #999999; border-radius: 12px;
+    position: absolute; top: 0; bottom: 0; right: 27px;
+    -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+}

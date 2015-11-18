@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Argyle Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/login.css"/>
+    <script type="text/javascript" src="/js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="/js/login.js"></script>
+</head>
+<body>
+<!--[if lt IE 10] >
+<link rel="stylesheet" href="/stylesheets/css/unsupported_browser.css"/>
+<div class=unsupported-browser>
+    <div class="container clearfix">
+        <div>
+            <img src="/img/icon/ie-notice.png">
+        </div>
+        <div>
+            <h5><b>Sorry your Browser/Program is not compatible with ArgyleData.</b></h5>
+            <p>We recommend upgrading to the latest <a href="http://windows.microsoft.com/ie">Internet Explorer</a>, <a href="https://chrome.google.com">Google Chrome</a>, or <a href="https://mozilla.org/firefox/">Firefox</a>.</p>
+            <p>If you are using Internet Explorer, make sure you <a href="http://windows.microsoft.com/en-US/windows7/webpages-look-incorrect-in-Internet-Explorer">turn off "Compatibility View"</a>.</p>
+        </div>
+    </div>
+</div>
+<! [endif]-->
+
+<div class="panel panel-default login-pane">
+    <div class="panel-body">
+        <div class="row banner-row">
+            <div class="col-sm-12">
+                <div class="banner">
+                    <img src="img/argyle-vertical-large.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="alert alert-danger" id="sign_in_request_failure" role="alert" style="display: none;">
+                    Unable to connect to server.
+                </div>
+                <div class="alert alert-danger" id="sign_in_failed" role="alert" style="display: none;">
+                    <span id="failure_message"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 form-group input-container">
+                <input type="text" class="form-control" name="username" placeholder="USER NAME">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 form-group passwd-container">
+                <input type="password" class="form-control" name="passwd" PLACEHOLDER="PASSWORD">
+                <button class="btn btn-link sign-in-icon" disabled="true" id="signIn">
+                    <i class="glyphicon glyphicon-log-in" id="login_icon"></i>
+                    <i class="fa fa-circle-o-notch fa-spin" id="authenticating_icon" style="visibility: hidden;"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

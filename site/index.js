@@ -6,7 +6,9 @@ var express = require('express'),
     session = require('express-session'),
     RedisStore = require('connect-redis')(session),
     path = require('path'),
-    domain = require('domain');
+    domain = require('domain'),
+    authorization = require('./usermanage/Authorization');
+
 
 var clientRoot = __dirname;
 
@@ -26,7 +28,7 @@ function _createWorkerApp(){
     //        ttl:  config.sessionExpiration  //  expiring session after xx minutes
     //    })
     //}));
-    //app.use(authorization);
+    app.use(authorization);
     //app.use(sessionHolder.startup());
     app.use(express.static(clientRoot));
     app.use(express.json());
