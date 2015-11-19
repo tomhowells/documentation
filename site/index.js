@@ -33,7 +33,7 @@ function _createWorkerApp(){
         })
     }));
 */
-    app.use(authorization);
+    //app.use(authorization);
     //app.use(sessionHolder.startup());
     app.use(express.static(clientRoot));
     app.use(express.json());
