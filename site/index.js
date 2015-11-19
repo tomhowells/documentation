@@ -4,8 +4,8 @@
 
 var express = require('express'),
     session = require('express-session'),
-    RedisStore = require('connect-redis')(session),
-    cookieParser = require('cookie-parser'),
+    //RedisStore = require('connect-redis')(session),
+    //cookieParser = require('cookie-parser'),
     path = require('path'),
     domain = require('domain'),
     authorization = require('./usermanage/Authorization');
@@ -21,6 +21,7 @@ function _createWorkerApp(){
     var port = process.env.PORT || 8080;
     // session support
     //app.use(cookieParser('720657C2-5890-4F3F-838C-F056C64AE304'));
+/*
     app.use(session({
         secret: '720657C2-5890-4F3F-838C-F056C64AE304',
         resave: false,
@@ -31,6 +32,7 @@ function _createWorkerApp(){
             ttl:  1800  //  expiring session after xx minutes
         })
     }));
+*/
     app.use(authorization);
     //app.use(sessionHolder.startup());
     app.use(express.static(clientRoot));
@@ -57,7 +59,7 @@ function _createWorkerApp(){
         d.run(next);
     });
 
-    require('./usermanage/UserManageCtrl')(app);
+    //require('./usermanage/UserManageCtrl')(app);
 
     app.get('*', function(request, response){
         response.sendfile(path.resolve(clientRoot, 'index.html'));
