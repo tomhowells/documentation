@@ -7,8 +7,8 @@ var express = require('express'),
     //RedisStore = require('connect-redis')(session),
     //cookieParser = require('cookie-parser'),
     path = require('path'),
-    domain = require('domain'),
-    authorization = require('./usermanage/Authorization');
+    domain = require('domain');
+    //authorization = require('./usermanage/Authorization');
 
 
 var clientRoot = __dirname;
