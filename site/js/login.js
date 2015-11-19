@@ -22,9 +22,6 @@ $(function(){
 
     $("input[name='username']").focus();
 
-    // enable tooltip
-    $('[data-toggle="tooltip"]').tooltip()
-
     function _login(){
         var userName = $("input[name='username']").val(),
             passwd = $("input[name='passwd']").val(),
@@ -33,15 +30,13 @@ $(function(){
         $('#sign_in_failed').hide();
         $('#sign_in_request_failure').hide();
         switchButtons(true);
-/*
-        $.post('/API/signin', {
+        $.post('/signin', {
                 userName: userName.trim(),
-                passwd: passwd,
-                isKeepSignIn: isKeepSignIn
+                passwd: passwd
             }, 'json')
             .done(function(data){
                 if(data.signinStatus == 'verified'){
-                    location.href = '/' + requestHash;
+                    location.href = '/index.html';
                 }else{
                     console.debug(data);
                     switchButtons(false);
@@ -52,16 +47,7 @@ $(function(){
                 var message = resp.message;
                 switchButtons(false);
                 if(message != null){
-                    if(message === 'password-expired'){
-                        // ask user to reset password
-                        $('#reset_password_failed').hide();
-                        $("input[name='new_password']").val('');
-                        $("input[name='confirm_password']").val('');
-                        $('#password_change_modal').modal({
-                            backdrop: 'static'
-                        });
-                        $("input[name='new_password']").focus();
-                    }else if(message === 'no-permission'){
+                    if(message === 'no-permission'){
                         $('#failure_message').text('Insufficient privileges to access Argyle Data System. Please contact your system administrator to find out more.');
                         $('#sign_in_failed').show();
                     }else{
@@ -72,7 +58,6 @@ $(function(){
                     $('#sign_in_request_failure').show();
                 }
             });
-*/
     }
 
     function _validation(){

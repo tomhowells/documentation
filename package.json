@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "connect-redis": "^2.1.0",
+    "cookie-parser": "1.0.1",
     "express": "3.x",
     "express-session": "^1.0.1"
   }

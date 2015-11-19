@@ -5,6 +5,7 @@
 var express = require('express'),
     session = require('express-session'),
     RedisStore = require('connect-redis')(session),
+    cookieParser = require('cookie-parser'),
     path = require('path'),
     domain = require('domain'),
     authorization = require('./usermanage/Authorization');
@@ -20,14 +21,16 @@ function _createWorkerApp(){
     var port = process.env.PORT || 8080;
     // session support
     //app.use(cookieParser('720657C2-5890-4F3F-838C-F056C64AE304'));
-    //app.use(session({
-    //    saveUninitialized: false,
-    //    store: new RedisStore({
-    //        host: config.redis.host,
-    //        port: config.redis.port,
-    //        ttl:  config.sessionExpiration  //  expiring session after xx minutes
-    //    })
-    //}));
+    app.use(session({
+        secret: '720657C2-5890-4F3F-838C-F056C64AE304',
+        resave: false,
+        saveUninitialized: false,
+        store: new RedisStore({
+            host: "localhost",
+            port: 8083,
+            ttl:  1800  //  expiring session after xx minutes
+        })
+    }));
     app.use(authorization);
     //app.use(sessionHolder.startup());
     app.use(express.static(clientRoot));
@@ -53,6 +56,9 @@ function _createWorkerApp(){
         //logger.debug('PID:%d, handler %s', process.pid, req.url);
         d.run(next);
     });
+
+    require('./usermanage/UserManageCtrl')(app);
+
     app.get('*', function(request, response){
         response.sendfile(path.resolve(clientRoot, 'index.html'));
     });
