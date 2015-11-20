@@ -21,7 +21,7 @@ module.exports = function(app) {
 
         redisClient.on('connect', function(err){
             if (err) return;
-            console.log("connected");
+            console.log("connected as:", userName);
             redisClient.get(userName, function(err, value){
                 console.log(err.message);
                 console.log("username got client: ",value);
@@ -32,19 +32,6 @@ module.exports = function(app) {
 
             });
         });
-
-/*
-        redis.authenticate({
-            loginName: userName,
-            passwd: passwd
-        }, function(err, userData){
-            if(err) return next(err);
-            req.session.userData = userData;
-            res.json({
-                signinStatus: 'verified'
-            });
-        });
-*/
 
     });
 };
