@@ -11,11 +11,20 @@ module.exports = function(app) {
         var userName = req.body.userName,
             passwd = req.body.passwd;
 
-        var redisClient = redis.createClient(8083, "127.0.0.1");
+        var rtg   = require("url").parse(process.env.REDISTOGO_URL);
+        var redisClient = require("redis").createClient(
+            rtg.port,
+            rtg.hostname
+        );
+
+        redisClient.auth(rtg.auth.split(":")[1]);
+
         redisClient.on('connect', function(err){
             if (err) return;
             console.log("connected");
-            redisClient.get('ned', function(err, value){
+            redisClient.get(userName, function(err, value){
+                console.log(err.message);
+                console.log("username got client: ",value);
                 req.session.userData = userName;
                 res.json({
                     signinStatus: 'verified'
@@ -23,6 +32,7 @@ module.exports = function(app) {
 
             });
         });
+
 /*
         redis.authenticate({
             loginName: userName,
