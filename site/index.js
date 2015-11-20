@@ -45,7 +45,7 @@ function _createWorkerApp(){
             store: new RedisStore({
                 host: redisUrl.hostname,
                 port: redisUrl.port,
-                db: redisAuth[0],
+                db: 1, //redisAuth[0],
                 pass: redisAuth[1]
             })
         }));
