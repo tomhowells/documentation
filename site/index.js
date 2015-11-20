@@ -9,7 +9,7 @@ var express = require('express'),
     //cookieParser = require('cookie-parser'),
     path = require('path'),
     domain = require('domain');
-    //authorization = require('./usermanage/Authorization');
+    authorization = require('./usermanage/Authorization');
 
 
 var clientRoot = __dirname;
@@ -50,7 +50,7 @@ function _createWorkerApp(){
             })
         }));
     });
-    //app.use(authorization);
+    app.use(authorization);
     //app.use(sessionHolder.startup());
     app.use(express.static(clientRoot));
     app.use(express.json());
@@ -76,7 +76,7 @@ function _createWorkerApp(){
         d.run(next);
     });
 
-    //require('./usermanage/UserManageCtrl')(app);
+    require('./usermanage/UserManageCtrl')(app);
 
     app.get('*', function(request, response){
         response.sendfile(path.resolve(clientRoot, 'index.html'));
