@@ -35,11 +35,14 @@ function _createWorkerApp(){
     }));
 */
     // RedisToGo connection
+/*
     app.configure(function () {
         var redisUrl = url.parse(process.env.REDISTOGO_URL),
             redisAuth = redisUrl.auth.split(':');
         console.log("redisUrl:", JSON.stringify(redisUrl));
         console.log("redisAuth:", redisAuth.join(','));
+
+        //redisUrl = {"protocol":"redis:","slashes":true,"auth":"redistogo:4070e1b91adbd692981a386b1d66af4a","host":"panga.redistogo.com:9898","port":"9898","hostname":"panga.redistogo.com","hash":null,"search":null,"query":null,"pathname":"/","path":"/","href":"redis://redistogo:4070e1b91adbd692981a386b1d66af4a@panga.redistogo.com:9898/"};
         app.use(session({
             secret: '720657C2-5890-4F3F-838C-F056C64AE304',
             store: new RedisStore({
@@ -50,6 +53,24 @@ function _createWorkerApp(){
             })
         }));
     });
+*/
+
+    var redisUrl = url.parse(process.env.REDISTOGO_URL),
+        redisAuth = redisUrl.auth.split(':');
+    console.log("redisUrl:", JSON.stringify(redisUrl));
+    console.log("redisAuth:", redisAuth.join(','));
+
+    //redisUrl = {"protocol":"redis:","slashes":true,"auth":"redistogo:4070e1b91adbd692981a386b1d66af4a","host":"panga.redistogo.com:9898","port":"9898","hostname":"panga.redistogo.com","hash":null,"search":null,"query":null,"pathname":"/","path":"/","href":"redis://redistogo:4070e1b91adbd692981a386b1d66af4a@panga.redistogo.com:9898/"};
+    app.use(session({
+        secret: '720657C2-5890-4F3F-838C-F056C64AE304',
+        store: new RedisStore({
+            host: redisUrl.hostname,
+            port: redisUrl.port,
+            db: 1, //redisAuth[0],
+            pass: redisAuth[1]
+        })
+    }));
+
     app.use(authorization);
     //app.use(sessionHolder.startup());
     app.use(express.static(clientRoot));
