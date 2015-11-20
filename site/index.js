@@ -4,7 +4,8 @@
 
 var express = require('express'),
     session = require('express-session'),
-    //RedisStore = require('connect-redis')(session),
+    url = require('url'),
+    RedisStore = require('connect-redis')(session),
     //cookieParser = require('cookie-parser'),
     path = require('path'),
     domain = require('domain');
@@ -33,6 +34,20 @@ function _createWorkerApp(){
         })
     }));
 */
+    // RedisToGo connection
+    app.configure(function () {
+        var redisUrl = url.parse(process.env.REDISTOGO_URL),
+            redisAuth = redisUrl.auth.split(':');
+        app.use(session({
+            secret: '720657C2-5890-4F3F-838C-F056C64AE304',
+            store: new RedisStore({
+                host: redisUrl.hostname,
+                port: redisUrl.port,
+                db: redisAuth[0],
+                pass: redisAuth[0]
+            })
+        }));
+    });
     //app.use(authorization);
     //app.use(sessionHolder.startup());
     app.use(express.static(clientRoot));
