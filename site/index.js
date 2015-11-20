@@ -38,13 +38,15 @@ function _createWorkerApp(){
     app.configure(function () {
         var redisUrl = url.parse(process.env.REDISTOGO_URL),
             redisAuth = redisUrl.auth.split(':');
+        console.log("redisUrl:", JSON.stringify(redisUrl));
+        console.log("redisAuth:", redisAuth.join(','));
         app.use(session({
             secret: '720657C2-5890-4F3F-838C-F056C64AE304',
             store: new RedisStore({
                 host: redisUrl.hostname,
                 port: redisUrl.port,
                 db: redisAuth[0],
-                pass: redisAuth[0]
+                pass: redisAuth[1]
             })
         }));
     });
