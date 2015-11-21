@@ -25,13 +25,24 @@ module.exports = function(app) {
                 if (err) {
                     return next(err);
                 }
-                if (value && value === passwd) {
-                    req.session.userData = userName;
-                    res.json({
-                        signinStatus: 'verified'
-                    });
+                else {
+                    if (!value) {
+                        res.json({
+                            message: 'username-failed'
+                        });
+                    }
+                    else if (value === passwd) {
+                        req.session.userData = userName;
+                        res.json({
+                            signinStatus: 'verified'
+                        });
+                    }
+                    else {
+                        res.json({
+                            message: 'password-failed'
+                        });
+                    }
                 }
-
             });
         });
 
