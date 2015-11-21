@@ -21,6 +21,7 @@ function _createWorkerApp(){
     var port = process.env.PORT || 8080;
     // Session support using RedisToGo
     app.configure(function () {
+        console.log("process.env.REDISTOGO_URL:", process.env.REDISTOGO_URL);
          var redisUrl = url.parse("redis://redistogo:4070e1b91adbd692981a386b1d66af4a@panga.redistogo.com:9898/"),
          redisAuth = redisUrl.auth.split(':');
          console.log("redisUrl:", JSON.stringify(redisUrl));
@@ -29,12 +30,13 @@ function _createWorkerApp(){
          //redisUrl = {"protocol":"redis:","slashes":true,"auth":"redistogo:4070e1b91adbd692981a386b1d66af4a","host":"panga.redistogo.com:9898","port":"9898","hostname":"panga.redistogo.com","hash":null,"search":null,"query":null,"pathname":"/","path":"/","href":"redis://redistogo:4070e1b91adbd692981a386b1d66af4a@panga.redistogo.com:9898/"};
          app.use(session({
          secret: '720657C2-5890-4F3F-838C-F056C64AE304',
-         store: new RedisStore({
-         host: redisUrl.hostname,
-         port: redisUrl.port,
-         //db: redisAuth[0],
-         pass: redisAuth[1]
-         })
+             store: new RedisStore({
+                 host: redisUrl.hostname,
+                 port: redisUrl.port,
+                 //db: redisAuth[0],
+                 pass: redisAuth[1],
+                 ttl:  1800  //  expiring session after xx minutes
+             })
          }));
     });
     app.use(authorization);
