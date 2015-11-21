@@ -50,8 +50,12 @@ $(function(){
                     if(message === 'no-permission'){
                         $('#failure_message').text('Insufficient privileges to access Argyle Data System. Please contact your system administrator to find out more.');
                         $('#sign_in_failed').show();
-                    }else{
+                    }else if (message === 'bad-credentials') {
                         $('#failure_message').text('The user name or password for Argyle Data is incorrect.');
+                        $('#sign_in_failed').show();
+                    }
+                    else {
+                        $('#failure_message').text(message);
                         $('#sign_in_failed').show();
                     }
                 }else{

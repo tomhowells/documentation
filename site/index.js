@@ -31,9 +31,8 @@ function _createWorkerApp(){
          store: new RedisStore({
              host: redisUrlParsed.hostname,
              port: redisUrlParsed.port,
-             //db: redisAuth[0],
              pass: redisAuth[1],
-             ttl:  60  //Redis session TTL (expiration) in seconds
+             ttl:  1800  //Redis session TTL (expiration) in seconds
          })
         }));
     });
@@ -45,7 +44,6 @@ function _createWorkerApp(){
         var d = domain.create();
         d.on('error', function (err) {
             // handle unexpected exceptions
-            //logger.error(err.stack || err.message || err);
             res.statusCode = 500;
             try{
                 res.json({
@@ -58,7 +56,6 @@ function _createWorkerApp(){
         });
         d.add(req);
         d.add(res);
-        //logger.debug('PID:%d, handler %s', process.pid, req.url);
         d.run(next);
     });
 

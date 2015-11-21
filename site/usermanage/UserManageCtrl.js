@@ -28,11 +28,8 @@ module.exports = function(app) {
                     return next(err);
                 }
                 else {
-                    if (!result) {
-                        res.status(401).send({ message: "bad username" });
-                    }
-                    else if (result !== passwd) {
-                        res.status(401).send({ message: "bad password" });
+                    if (!result || result !== passwd) {
+                        res.status(401).send({ message: "bad-credentials" });
                     }
                     else {
                         req.session.userData = userName;
