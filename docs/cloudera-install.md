@@ -58,16 +58,20 @@ Add IPA admin user password. Add host IPA server. Add ipa cert path
 
 *****
 
-### Adding the IBIS service
-Follow adding Cloudera services above and select continue to accept defaults below
-![](images/IBIS_add_service_wizard_1.png)
+### Adding the Python Tools(Anaconda, IBIS, Fastavro)
+Select on Python Tools selection field and select host you want to have Python Tools on from the list of available hosts and select continue.
+![](images/Python_Tools_add_service_wizard_1.png)
 
-Ignore the error during install
-![](images/IBIS_add_service_wizard_2.png)
+Install Python Tools to hosts
+![](images/Python_Tools_add_service_wizard_2.png)
 
 *****
 
-### Adding the Anaconda environment
-To install Anacondo go to [https://www.continuum.io/downloads] and pick linux as your platform and python 2.7. Download the installer and run the following command to install the software: `bash Anaconda2-2.4.0-Linux-x86_64.sh`
+### Adding the Argyle Data ML service
+Select on Argyle Data ML Service selection field and select host you want to have Argyle Data ML Service on from the list of available hosts and select continue.
+![](images/ArgyleML_add_service_wizard_1.png)
+
+Add Impala Database, Record Table, Temp Alert Table, Alert Table and Temp Alert filepath.
+![](images/ArgyleML_add_service_wizard_2.png)
 
 *****
