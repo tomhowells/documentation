@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Web Console - ArgyleData</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Web Console";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> ArgyleData</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../cloudera-install/">Cloudera Installation</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../network-ingest/">Network Ingest</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../requirements/">System Requirements</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../releases/">Release Notes</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Web Console</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#how-to-detect-fraud-and-blacklist-numbers">How to Detect Fraud and Blacklist Numbers</a></li>
+                
+                    <li><a class="toctree-l4" href="#domestic-fraud">Domestic Fraud</a></li>
+                
+                    <li><a class="toctree-l4" href="#international-fraud">International Fraud</a></li>
+                
+                    <li><a class="toctree-l4" href="#blacklisting-a-number">Blacklisting a Number</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">ArgyleData</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Web Console</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="how-to-detect-fraud-and-blacklist-numbers">How to Detect Fraud and Blacklist Numbers</h1>
+<p><img alt="" src="../images/ui/1_EmailAlert.png" /></p>
+<p>The initial alert of potential fraud will show up as an email. The email will list all of the calls that machine learning has interpreted as fraudulent. </p>
+<p><img alt="" src="../images/ui/2_Login.png" /></p>
+<p>Now, log onto Argyle Data.</p>
+<p><img alt="" src="../images/ui/3_FraudAlertManagement.png" /></p>
+<p>Once you have logged in, click on the Fraud Alert Management button, highlighted in yellow, in the toolbar on the left side of the screen. This view lists fraud suspects, the protocol and the method of fraud that is suspected, as well as the end time of the suspected fraudulent period. </p>
+<p><img alt="" src="../images/ui/StandardDashboards.png" /></p>
+<p>From there, click on “Fraud Analytics” in the toolbar. The initial screen gives a top down view of potential fraud from a domestic standpoint (ISUP) and a roaming standpoint (TD35). 
+This dashboard comes with a predetermined set of charts and graphs, but it can be configured to provide different graphs that fit your company’s specific needs.</p>
+<h3 id="domestic-fraud">Domestic Fraud</h3>
+<p><img alt="" src="../images/ui/7_DomesticGraphView.png" /></p>
+<p>Click on “graph” in the toolbar to view fraud from graphical viewpoint. 
+To get a graph like the one in Fig. 7, select ISUP from the dropdown menu on the left of the screen. Enter a number that looked suspicious from Fig. 5 into the bar at the top of the screen and click search. 
+The graph that comes up makes it very clear to see fraud. The above case is an instance of Wangiri fraud. The caller in the middle (the number entered into the search bar) has called all of the numbers in the two surrounding rings. The nodes on the inner circle are the callers unfortunate enough to have called the number back. </p>
+<p><img alt="" src="../images/ui/8_DomesticDataView.png" /></p>
+<p>Click the tab that says Graph Data to get to this screen. This shows who called whom and the country each party is in. It also displays the number of calls between the two parties and the duration they were connected for. </p>
+<h3 id="international-fraud">International Fraud</h3>
+<p><img alt="" src="../images/ui/9_RoamingGraphView.png" /></p>
+<p>Roaming fraud can be detected in a similar way to domestic fraud. Select TD.35 from the dropdown menu in the top left corner of the screen and enter a suspicious number into the bar. Entering the beginning of a number with a * at the end shows results for every number that begins with those digits. Once a number has been entered, click search. </p>
+<p><img alt="" src="../images/ui/10_RoamingGraphLink.png" /></p>
+<p>This graph shows results for three nodes. In order to highlight the data from the node that looks like a Wangiri attack, click on the node. A bar will come up at the bottom of the screen. Click on the spanner to bring up a popup menu. </p>
+<p><img alt="" src="../images/ui/11_RoamingGraphLinkHistory.png" /></p>
+<p>The popup menu offers three options: History Lookup, Subscriber TD.36 SLA and Case Management. Click on History Lookup.</p>
+<p><img alt="" src="../images/ui/12_RoamingHistoryTimeLookup.png" /></p>
+<p>History Lookup brings up this screen. Notice we on have moved from “Graph” to “History Lookup” in the toolbar. The graph shows the time period over which these calls took place, with the different colors representing data, SMS and voice respectively. </p>
+<p><img alt="" src="../images/ui/13_RoamingTimeNumbers.png" /></p>
+<p>Click and drag the mouse over the area on the graph where the spike in activity takes place. This will pull up the usage over this time period. </p>
+<p><img alt="" src="../images/ui/14_RoamingTimeSlice.png" /></p>
+<p>To expand the view of the area with activity, drag the sliders at the bottom of the graph to decrease the timeframe of the graph. Notice that Gayana frequently appears in the Roaming column as we will use this information later on. </p>
+<h3 id="blacklisting-a-number">Blacklisting a Number</h3>
+<p><img alt="" src="../images/ui/15_Roaming_GraphClickCenter.png" /></p>
+<p>Go back into “Graph” on the toolbar. Only one blue node will now appear. Click on it (this may be tricky as the graph moves around). Notice that outgoing calls are connected by blue lines and incoming calls are connected by red lines. </p>
+<p><img alt="" src="../images/ui/16_RoamingGraphLink.png" /></p>
+<p>Click on the spanner at the bottom of the screen to get the pop up menu. </p>
+<p><img alt="" src="../images/ui/17_RoamingGraphLinkCaseManagement.png" /></p>
+<p>Hover over “Case Management” to reveal another popup menu. </p>
+<p><img alt="" src="../images/ui/18_RoamingGraphBlacklist.png" /></p>
+<p>This popup menu brings up multiple options: Blacklist, Whitelist, Watched, Actioned, Reviewed.
+Click Blacklist. </p>
+<p><img alt="" src="../images/ui/19_CaseManagementBlacklist.png" /></p>
+<p>Click “Case Management” on the toolbar and then click the green “+” button to add the number to the blacklist. </p>
+<p><img alt="" src="../images/ui/20_CaseManagementBlacklistComment.png" /></p>
+<p>Once added to the blacklist, it is possible to add comments to numbers. As this number was roaming in Guyana, we will add a comment saying “Roaming in Guyana”. </p>
+<p><img alt="" src="../images/ui/21_RoamingComplianceSLA_Overview.png" /></p>
+<p>Click “Compliance Matrix” on the toolbar. This screen shows if companies are within or outside SLA.</p>
+<p><img alt="" src="../images/ui/22_RoamingComplianceDrillDown.png" /></p>
+<p>By clicking on a carrier from the list on the top right, that carriers stats are highlights in the two tables below. </p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../releases/" class="btn btn-neutral" title="Release Notes"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../releases/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+
+</body>
+</html>
