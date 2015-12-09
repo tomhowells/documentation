@@ -62,21 +62,21 @@
         
             <ul>
             
-                <li class="toctree-l3"><a href="#cloudera-54-service-configuration">Cloudera 5.4 Service Configuration</a></li>
+                <li class="toctree-l3"><a href="#cloudera-54-configuration">Cloudera 5.4 Configuration</a></li>
                 
-                    <li><a class="toctree-l4" href="#adding-cloudera-services">Adding Cloudera services</a></li>
+                    <li><a class="toctree-l4" href="#adding-accumulo-services">Adding Accumulo Services</a></li>
                 
-                    <li><a class="toctree-l4" href="#adding-the-flume-service">Adding the Flume service</a></li>
+                    <li><a class="toctree-l4" href="#adding-python-tools-services">Adding Python Tools Services</a></li>
                 
-                    <li><a class="toctree-l4" href="#adding-the-hive-service">Adding the Hive service</a></li>
+                    <li><a class="toctree-l4" href="#adding-argyle-data-ml-services">Adding Argyle Data ML Services</a></li>
                 
-                    <li><a class="toctree-l4" href="#adding-the-impala-service">Adding the Impala service</a></li>
+                    <li><a class="toctree-l4" href="#adding-the-flume-service">Adding the Flume Service</a></li>
                 
-                    <li><a class="toctree-l4" href="#adding-the-argyledb-service">Adding the ArgyleDB service</a></li>
+                    <li><a class="toctree-l4" href="#adding-hive-services">Adding Hive Services</a></li>
                 
-                    <li><a class="toctree-l4" href="#adding-the-python-toolsanaconda-ibis-fastavro">Adding the Python Tools(Anaconda, IBIS, Fastavro)</a></li>
+                    <li><a class="toctree-l4" href="#adding-the-impala-service">Adding the Impala Service</a></li>
                 
-                    <li><a class="toctree-l4" href="#adding-the-argyle-data-ml-service">Adding the Argyle Data ML service</a></li>
+                    <li><a class="toctree-l4" href="#adding-presto-db-services">Adding Presto DB Services</a></li>
                 
             
             </ul>
@@ -144,58 +144,116 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="cloudera-54-service-configuration">Cloudera 5.4 Service Configuration</h1>
-<h3 id="adding-cloudera-services">Adding Cloudera services</h3>
-<p>Select on the arrow next to cluster name and select Add a Service per picture below
-<img alt="" src="../images/Home_add_service_1.png" /></p>
-<p>From list of services pick the service you want to add
-<img alt="" src="../images/All_add_service_wizard_1.png" /></p>
-<hr />
-<h3 id="adding-the-flume-service">Adding the Flume service</h3>
-<p>Follow Adding Cloudera services above and select continue to accept defaults below
-<img alt="" src="../images/Flume_add_service_wizard_1.png" /></p>
-<p>Select on Flume agent selection field and select hosts you want to have the agent on from the list of available hosts and select continue and finish
-<img alt="" src="../images/Flume_add_service_wizard_2.png" /></p>
-<h3 id="adding-the-hive-service">Adding the Hive service</h3>
-<p>Follow Adding Cloudera services above and select continue to accept defaults below
-<img alt="" src="../images/Hive_add_service_wizard_1.png" /></p>
-<p>Select on Gateway, Hive Metastore Server, WebHcat Server, Hiveserver2 selection fields and select hosts you want to have Hive on from the list of available hosts and select continue.
-<img alt="" src="../images/Hive_add_service_wizard_2.png" /></p>
-<p>Select Use Embedded database and select test connection then select continue
-<img alt="" src="../images/Hive_add_service_wizard_3.png" /></p>
-<p>Leave defaults below as is and select finish
-<img alt="" src="../images/Hive_add_service_wizard_4.png" /></p>
-<hr />
-<h3 id="adding-the-impala-service">Adding the Impala service</h3>
-<p>Follow Adding Cloudera services above and select continue to accept defaults below
-<img alt="" src="../images/Impala_add_service_wizard_1.png" /></p>
-<p>Select on Impala Catalog Server, Impala Satatestore, Impala Daemon selection fields and select hosts you want to have Hive on from the list of available hosts and select continue.
-<img alt="" src="../images/Impala_add_service_wizard_2.png" /></p>
-<p>Leave defaults as is and select continue than finish
-<img alt="" src="../images/Impala_add_service_wizard_3.png" /></p>
-<hr />
-<h3 id="adding-the-argyledb-service">Adding the ArgyleDB service</h3>
-<p>Follow Adding Cloudera services above and select continue to accept defaults below
-<img alt="" src="../images/ArgyleDB_add_service_wizard_1.png" /></p>
-<p>Select on ArgyleDB Server, Redis Server selection fields and select hosts you want to have ArgyleDB on from the list of available hosts and select continue.
-<img alt="" src="../images/ArgyleDB_add_service_wizard_2.png" /></p>
-<p>Add Redis server host if localhost set to local otherwise use FQDN name. Add Tableau REST API user. Add Tableau user password for rest apu user. Add api admin user
-<img alt="" src="../images/ArgyleDB_add_service_wizard_3-2.png" /></p>
-<p>Add IPA admin user password. Add host IPA server. Add ipa cert path
-<img alt="" src="../images/ArgyleDB_add_service_wizard_3-3.png" /></p>
-<hr />
-<h3 id="adding-the-python-toolsanaconda-ibis-fastavro">Adding the Python Tools(Anaconda, IBIS, Fastavro)</h3>
-<p>Select on Python Tools selection field and select host you want to have Python Tools on from the list of available hosts and select continue.
-<img alt="" src="../images/Python_Tools_add_service_wizard_1.png" /></p>
-<p>Install Python Tools to hosts
-<img alt="" src="../images/Python_Tools_add_service_wizard_2.png" /></p>
-<hr />
-<h3 id="adding-the-argyle-data-ml-service">Adding the Argyle Data ML service</h3>
-<p>Select on Argyle Data ML Service selection field and select host you want to have Argyle Data ML Service on from the list of available hosts and select continue.
-<img alt="" src="../images/ArgyleML_add_service_wizard_1.png" /></p>
-<p>Add Impala Database, Record Table, Temp Alert Table, Alert Table and Temp Alert filepath.
-<img alt="" src="../images/ArgyleML_add_service_wizard_2.png" /></p>
-<hr />
+                <h1 id="cloudera-54-configuration">Cloudera 5.4 Configuration</h1>
+<h2 id="adding-accumulo-services">Adding Accumulo Services</h2>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Home_add_service_1.png" />
+This is the start page for all of the services you will need to add. The list on the left side of the screen shows services that have already been activated, with the green dot indicating they are running. </p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Accumulo_add_service_wizard_0.png" />
+Click on the arrow to access the drop down menu. From there, click add service. </p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Accumulo_add_service_wizard_1.png" />
+This page brings up a list of services to add. Click on Accumulo 1.6 to begin adding the Accumulo service. Press Continue to set the dependencies for for the Accumulo service. </p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Accumulo_add_service_wizard_2.png" />
+Here, select the default option HDFS and press continue. </p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Accumulo_add_service_wizard_3.png" />
+In the “Customize Role Assignments” page, you can customize the host on which each agent runs. To do this, click on the grey box entitled “Select hosts”. Do this for the MAster, Tablet Server, Garbage Collector, Monitor,Tracer and Gateway agents. Ensure that the correct host is selected for each agent, otherwise performance will suffer. </p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Accumulo_add_service_wizard_4.png" />
+Clicking “Select hosts” brings up a window like this where all the potential hosts are displayed. Check the desired host(s) and click “OK”. Do this for each of the agents so that each agent has its’ host displayed beneath. </p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Accumulo_add_service_wizard_5.png" />
+Once your agents all look something like this, click continue. </p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Accumulo_add_service_wizard_6.png" />
+Review the changes before clicking continue. Clicking continue will complete the addition of the Impala service. </p>
+<h2 id="adding-python-tools-services">Adding Python Tools Services</h2>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Python_add_service_wizard_1.png" />
+Python Tools must be added before the Argyle Data ML services can be added. To do this, return to the homescreen.</p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Python_add_service_wizard_2.png" />
+Clcik the arrow to open the dropdown menu and click "Add a Service"</p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Python_add_service_wizard_3.png" />
+The Python Tools option are not on the first page. Scroll down to find the service.</p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Python_add_service_wizard_4.png" />
+ Select the "Python Tools" service and click "Continue".</p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Python_add_service_wizard_5.png" />
+Assign a role to the Python Tools host by clicking the "Select hosts" bar.</p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Python_add_service_wizard_6.png" />
+Select the desired host from the list and click "OK".</p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Python_add_service_wizard_7.png" />
+Once the Python Tools has an assigned host, click "Continue".</p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Python_add_service_wizard_8.png" />
+ Check the Services are running properly and click "Continue".</p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Python_add_service_wizard_9.png" />
+Click "Finish" to confirm you have added the Python Tools services.</p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Python_add_service_wizard_10.png" />
+Install Python Tools to host(same host of Argyle Data ML)</p>
+<h2 id="adding-argyle-data-ml-services">Adding Argyle Data ML Services</h2>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Accumulo_add_service_wizard_1.png" />
+Return to the home screen to begin adding a new service. Again, click the arrow to get the drop down menu and click “Add a Service”</p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/ArgyleML_add_service_wizard_1.png" />
+Click Argyle Data ML and click continue to start adding the Argyle Data Machine Learning services.</p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/ArgyleML_add_service_wizard_2.png" />
+Select a host for the Argyle Data ML Service by clicking “Select host”.</p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Accumulo_add_service_wizard_4.png" />
+Select the desired host(s) by checking the box and clicking “OK”.</p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/ArgyleML_add_service_wizard_3.png" />
+The Agent and assigned host should look like this. Click Continue once your screen looks like this. </p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/ArgyleML_add_service_wizard_4.png" />
+Review the changes to complete the addition of the Argyle Machine Learning Service to Cloudera. </p>
+<h2 id="adding-the-flume-service">Adding the Flume Service</h2>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Accumulo_add_service_wizard_0.png" />
+Return to the home screen to begin adding a new service. Again, click the arrow to get the drop down menu and click “Add a Service”</p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Flume_add_service_wizard_1.png" />
+Select Flume in the Add Service Wizard to start adding the Flume service. </p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Flume_add_service_wizard_2.png" />
+Select the default HDFS dependency for the Flume service. </p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Flume_add_service_wizard_3.png" />
+Select the host you want for the Flume agent by clicking “Select hosts”.    </p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Flume_add_service_wizard_4.png" />
+Select the desired host(s) from the list by clicking the check box, followed by “OK”.</p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Flume_add_service_wizard_5.png" />
+Click “Continue” once your screen looks like this and the agent has an assigned host.</p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Flume_add_service_wizard_6.png" />
+Click Finish to complete the addition of the Flume services.</p>
+<h2 id="adding-hive-services">Adding Hive Services</h2>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Accumulo_add_service_wizard_0.png" />
+Return to the home screen to begin adding a new service. Again, click the arrow to get the drop down menu and click “Add a Service”</p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Hive_add_service_wizard_1.png" />
+Click the Hive button, followed by “Continue”, to begin adding the Hive services. </p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Hive_add_service_wizard_2.png" />
+Here, select the HDFS dependency that includes Sentry. Then, click continue. </p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Hive_add_service_wizard_3.png" />
+Click the “Select hosts” button under the Gateway, Hive Metastore Server, WebHcat Server, Hiveserver2 selection fields and select hosts you want to have Hive run on from the list of available hosts.  Once each agent has a host and looks similar to the above screenshot, click continue. </p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Hive_add_service_wizard_4.png" />
+Click “Use Embedded Database” and then click “Test Connection”. Once this is working, click “Continue”.</p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Hive_add_service_wizard_5.png" />
+Leave the defaults as they are and click continue to finish the addition of the Hive services to Cloudera. </p>
+<h2 id="adding-the-impala-service">Adding the Impala Service</h2>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Accumulo_add_service_wizard_0.png" />
+Return to the home screen to begin adding a new service. Again, click the arrow to get the drop down menu and click “Add a Service”</p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Impala_add_service_wizard_1.png" />
+Select the “Impala” option, then click continue to begin adding the Impala services
+<img alt="alt text" src="../images/ClouderaImplementationImages/Impala_add_service_wizard_2.png" />
+Select the HDFS Hive-2 dependency then click continue. </p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Impala_add_service_wizard_3.png" />
+Select the host you want to have Hive on for the “Impala Catalogue Server”, “Impala StateStore” and Impala Daemon” by clicking the grey “Select a host” box for each. </p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Impala_add_service_wizard_4.png" />
+Once each agent has a host selected, click continue. </p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Impala_add_service_wizard_5.png" />
+Leave the defaults as they appear. Click continue to finish adding the Impala services to Cloudera. </p>
+<h2 id="adding-presto-db-services">Adding Presto DB Services</h2>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/Accumulo_add_service_wizard_0.png" />
+Return to the home screen to begin adding a new service. Again, click the arrow to get the drop down menu and click “Add a Service”</p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/PrestoDB_add_service_wizard_1.png" />
+To start adding Presto DB, scroll down  on the Add Service Wizard as the Presto DB link doesn’t appear on the first page. </p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/PrestoDB_add_service_wizard_2.png" />
+Once you have found the “Presto” link, select it and click continue. </p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/PrestoDB_add_service_wizard_3.png" />
+Select the default dependency and click continue. </p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/PrestoDB_add_service_wizard_4.png" />
+Select the host you want to have Presto on for “Presto Master” and “Presto Worker” by clicking the grey “Select a host” box. </p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/PrestoDB_add_service_wizard_5.png" />
+Once each role has an assigned host, click continue. </p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/PrestoDB_add_service_wizard_6.png" />
+Leave the default settings as they are. </p>
+<p><img alt="alt text" src="../images/ClouderaImplementationImages/PrestoDB_add_service_wizard_7.png" />
+Scroll down to the bottom of the page to ensure all the default settings are set how you want them, then click continue to complete adding the Presto DB services to Cloudera. </p>
               
             </div>
           </div>
