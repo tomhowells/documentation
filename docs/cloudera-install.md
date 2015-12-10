@@ -1,8 +1,9 @@
 # Cloudera 5.4 Configuration
 
-## Adding Python Tools Services
 ![alt text](./images/ClouderaImplementationImages/Python_add_service_wizard_1.png)
-Python Tools must be added before the Argyle Data ML services can be added. To do this, return to the homescreen.
+This is the start page for all of the services you will need to add. The list on the left side of the screen shows services that have already been activated, with the green dot indicating they are running.
+
+## Adding Python Tools Services
 
 ![alt text](./images/ClouderaImplementationImages/Python_add_service_wizard_2.png)
 Clcik the arrow to open the dropdown menu and click "Add a Service"
