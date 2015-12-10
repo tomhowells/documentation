@@ -41,7 +41,7 @@ Click Argyle Data ML and click continue to start adding the Argyle Data Machine 
 ![alt text](./images/ClouderaImplementationImages/ArgyleML_add_service_wizard_2.png)
 Select a host for the Argyle Data ML Service by clicking “Select host”.
 
-![alt text](./images/ClouderaImplementationImages/Accumulo_add_service_wizard_4.png)
+![alt text](./images/ClouderaImplementationImages/select_host_wizard.png)
 Select the desired host(s) by checking the box and clicking “OK”.
 
 ![alt text](./images/ClouderaImplementationImages/ArgyleML_add_service_wizard_3.png)
