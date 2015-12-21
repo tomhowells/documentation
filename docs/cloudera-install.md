@@ -109,3 +109,28 @@ Once each agent has a host selected, click continue.
 
 ![alt text](./images/ClouderaImplementationImages/Impala_add_service_wizard_5.png)
 Leave the defaults as they appear. Click continue to finish adding the Impala services to Cloudera. 
+
+## Adding Presto DB Services
+![alt text](./images/ClouderaImplementationImages/Accumulo_add_service_wizard_0.png)
+Return to the home screen to begin adding a new service. Again, click the arrow to get the drop down menu and click “Add a Service”
+
+![alt text](./images/ClouderaImplementationImages/PrestoDB_add_service_wizard_1.png)
+To start adding Presto DB, scroll down  on the Add Service Wizard as the Presto DB link doesn’t appear on the first page. 
+
+![alt text](./images/ClouderaImplementationImages/PrestoDB_add_service_wizard_2.png)
+Once you have found the “Presto” link, select it and click continue. 
+
+![alt text](./images/ClouderaImplementationImages/PrestoDB_add_service_wizard_3.png)
+Select the default dependency and click continue. 
+
+![alt text](./images/ClouderaImplementationImages/PrestoDB_add_service_wizard_4.png)
+Select the host you want to have Presto on for “Presto Master” and “Presto Worker” by clicking the grey “Select a host” box. 
+
+![alt text](./images/ClouderaImplementationImages/PrestoDB_add_service_wizard_5.png)
+Once each role has an assigned host, click continue. 
+
+![alt text](./images/ClouderaImplementationImages/PrestoDB_add_service_wizard_6.png)
+Leave the default settings as they are. 
+
+![alt text](./images/ClouderaImplementationImages/PrestoDB_add_service_wizard_7.png)
+Scroll down to the bottom of the page to ensure all the default settings are set how you want them, then click continue to complete adding the Presto DB services to 
